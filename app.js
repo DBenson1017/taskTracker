@@ -18,7 +18,17 @@ function addTodo(event){
     newTodo.classList.add('todo-item');
     todoDiv.appendChild(newTodo)
     //complete button 
-
+    const completedButton = document.createElement('button')
+    completedButton.innerHTML = "<i class='fas fa-check'></i>"
+    completedButton.classList.add('completed-btn')
+    todoDiv.appendChild(completedButton)
     //delete button 
+    const trashButton = document.createElement('button')
+    trashButton.innerHTML = "<i class='fas fa-trash'></i>"
+    trashButton.classList.add('completed-btn')
+    todoDiv.appendChild(trashButton)
+    //append to list
+    todoList.appendChild(todoDiv)
+
 
 }
