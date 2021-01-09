@@ -5,6 +5,7 @@ const todoList = document.querySelector('.todo-list');
 
 // event listeners
 todoButton.addEventListener('click', addTodo)
+todoList.addEventListener('click, deleteCheck')
 
 // functions 
 function addTodo(event){
@@ -31,4 +32,10 @@ function addTodo(event){
     todoList.appendChild(todoDiv)
     //clear input field 
     todoInput.value=''
+}
+
+function deleteCheck(e){
+    console.log(e.target)
+    
+
 }
