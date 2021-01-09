@@ -14,19 +14,21 @@ function addTodo(event){
     todoDiv.classList.add('todo')
     // create li 
     const newTodo = document.createElement('li')
-    newTodo.innerText='hey'
+    newTodo.innerText= todoInput.value
     newTodo.classList.add('todo-item');
     todoDiv.appendChild(newTodo)
     //complete button 
     const completedButton = document.createElement('button')
     completedButton.innerHTML = "<i class='fas fa-check'></i>"
-    completedButton.classList.add('completed-btn')
+    completedButton.classList.add('complete-btn')
     todoDiv.appendChild(completedButton)
     //delete button 
     const trashButton = document.createElement('button')
     trashButton.innerHTML = "<i class='fas fa-trash'></i>"
-    trashButton.classList.add('completed-btn')
+    trashButton.classList.add('trash-btn')
     todoDiv.appendChild(trashButton)
     //append to list
     todoList.appendChild(todoDiv)
+    //clear input field 
+    todoInput.value=''
 }
