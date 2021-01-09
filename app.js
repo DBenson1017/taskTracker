@@ -35,7 +35,9 @@ function addTodo(event){
 }
 
 function deleteCheck(e){
-    console.log(e.target)
-    
-
+    const item = e.target;
+    //DELETE TODO
+    if(item.classList[0] === 'trash-btn'){
+        
+    } 
 }
